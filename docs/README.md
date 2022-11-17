@@ -51,13 +51,13 @@
 ### 테스트 사항
 
 - BridgeMaker 관련
-- [ ] 인자에 따라 `알맞은 크기`의 다리의 배열을 반환하는지
+- [x] 인자에 따라 `알맞은 크기`의 다리의 배열을 반환하는지
 
 - Direction 관련
-- [ ] directionNumber에 따라 `알맞은 directionName`을 반환하는지
+- [x] directionNumber에 따라 `알맞은 directionName`을 반환하는지
 
 - BridgeRandomNumberGenerator 관련
-- [ ] `0 과 1 사이의 숫자만` 반환하는지
+- [x] `0 과 1 사이의 숫자만` 반환하는지
 
 ### 요구사항 정리
 
