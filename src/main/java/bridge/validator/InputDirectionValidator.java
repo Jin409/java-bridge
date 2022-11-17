@@ -14,6 +14,6 @@ public class InputDirectionValidator {
     }
 
     private static boolean hasValidDirectionSign(String direction) {
-        return !Objects.equals(direction, UP_SIGN) && !Objects.equals(direction, DOWN_SIGN);
+        return Objects.equals(direction, UP_SIGN) || Objects.equals(direction, DOWN_SIGN);
     }
 }

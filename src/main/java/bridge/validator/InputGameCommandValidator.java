@@ -14,6 +14,6 @@ public class InputGameCommandValidator {
     }
 
     private static boolean hasValidGameCommandSign(String gameCommand) {
-        return !Objects.equals(gameCommand, RETRY_SIGN) && !Objects.equals(gameCommand, QUIT_SIGN);
+        return Objects.equals(gameCommand, RETRY_SIGN) || Objects.equals(gameCommand, QUIT_SIGN);
     }
 }
