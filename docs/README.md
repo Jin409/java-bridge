@@ -59,6 +59,16 @@
 - BridgeRandomNumberGenerator 관련
 - [x] `0 과 1 사이의 숫자만` 반환하는지
 
+- BridgeSizeValidator 관련
+- [ ] 정수가 아닌 경우 예외가 발생하는지
+- [ ] 범위에 맞지 않는 경우 예외가 발생하는지
+
+- InputDirectionValidator 관련
+- [ ] U 혹은 D가 아닌 경우 예외가 발생하는지
+
+- InputGameCommandValidator
+- [ ] R 혹은 Q 가 아닌 경우 예외가 발생하는지
+
 ### 요구사항 정리
 
 - [ ] 메서드의 길이가 10라인을 넘어가지 않는가
