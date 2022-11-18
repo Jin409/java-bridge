@@ -16,5 +16,11 @@ public class BridgeGameController {
 
     public void start() {
         outputView.printStartMessage();
+        setForGame();
+    }
+
+    public void setForGame() {
+        String bridgeSize = inputView.readBridgeSize();
+        bridgeGame = new BridgeGame(Integer.parseInt(bridgeSize));
     }
 }
