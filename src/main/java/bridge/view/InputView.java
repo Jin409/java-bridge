@@ -1,5 +1,8 @@
 package bridge.view;
 
+import bridge.validator.BridgeSizeValidator;
+import bridge.validator.InputDirectionValidator;
+import bridge.validator.InputGameCommandValidator;
 import camp.nextstep.edu.missionutils.Console;
 
 public class InputView {
@@ -10,16 +13,22 @@ public class InputView {
 
     public String readBridgeSize() {
         System.out.println(READ_BRIDGE_SIZE_MESSAGE);
-        return Console.readLine();
+        String bridgeSize = Console.readLine();
+        BridgeSizeValidator.validate(bridgeSize);
+        return bridgeSize;
     }
 
     public String readMoving() {
         System.out.println(READ_MOVING_MESSAGE);
-        return Console.readLine();
+        String direction = Console.readLine();
+        InputDirectionValidator.validate(direction);
+        return direction;
     }
 
     public String readGameCommand() {
         System.out.println(READ_GAME_COMMAND_MESSAGE);
-        return Console.readLine();
+        String gameCommand = Console.readLine();
+        InputGameCommandValidator.validate(gameCommand);
+        return gameCommand;
     }
 }
